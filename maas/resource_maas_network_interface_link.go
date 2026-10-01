@@ -66,7 +66,7 @@ func resourceMAASNetworkInterfaceLink() *schema.Resource {
 				Type:        schema.TypeString,
 				Required:    true,
 				ForceNew:    true,
-				Description: "The identifier (CIDR or ID) of the subnet to be connected.",
+				Description: "The identifier (CIDR or ID) of the subnet to be connected. The subnet does not have to be on the interface's VLAN, since the link is created with `force`.",
 			},
 		},
 	}

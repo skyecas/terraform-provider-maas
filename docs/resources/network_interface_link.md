@@ -43,7 +43,7 @@ resource "maas_network_interface_link" "virsh_vm1_nic3" {
 ### Required
 
 - `network_interface` (String) The identifier (MAC address, name, or ID) of the network interface.
-- `subnet` (String) The identifier (CIDR or ID) of the subnet to be connected.
+- `subnet` (String) The identifier (CIDR or ID) of the subnet to be connected. The subnet does not have to be on the interface's VLAN, since the link is created with `force`.
 
 ### Optional
 
