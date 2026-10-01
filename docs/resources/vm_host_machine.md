@@ -3,12 +3,12 @@
 page_title: "maas_vm_host_machine Resource - terraform-provider-maas"
 subcategory: ""
 description: |-
-  Provides a resource to manage MAAS VM host machines.
+  Provides a resource to manage MAAS VM host machines. Creation waits up to 60 minutes for the machine to be composed and commissioned.
 ---
 
 # maas_vm_host_machine (Resource)
 
-Provides a resource to manage MAAS VM host machines.
+Provides a resource to manage MAAS VM host machines. Creation waits up to 60 minutes for the machine to be composed and commissioned.
 
 ## Example Usage
 

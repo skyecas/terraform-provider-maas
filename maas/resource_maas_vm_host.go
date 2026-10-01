@@ -25,7 +25,7 @@ var (
 
 func resourceMAASVMHost() *schema.Resource {
 	return &schema.Resource{
-		Description:   "Provides a resource to manage MAAS VM hosts.",
+		Description:   "Provides a resource to manage MAAS VM hosts. Creation waits up to 60 minutes for the host to register and sync.",
 		CreateContext: resourceVMHostCreate,
 		ReadContext:   resourceVMHostRead,
 		UpdateContext: resourceVMHostUpdate,

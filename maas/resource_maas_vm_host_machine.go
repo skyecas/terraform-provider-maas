@@ -13,7 +13,7 @@ import (
 
 func resourceMAASVMHostMachine() *schema.Resource {
 	return &schema.Resource{
-		Description:   "Provides a resource to manage MAAS VM host machines.",
+		Description:   "Provides a resource to manage MAAS VM host machines. Creation waits up to 60 minutes for the machine to be composed and commissioned.",
 		CreateContext: resourceVMHostMachineCreate,
 		ReadContext:   resourceVMHostMachineRead,
 		UpdateContext: resourceVMHostMachineUpdate,

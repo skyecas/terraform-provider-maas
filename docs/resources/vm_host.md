@@ -3,12 +3,12 @@
 page_title: "maas_vm_host Resource - terraform-provider-maas"
 subcategory: ""
 description: |-
-  Provides a resource to manage MAAS VM hosts.
+  Provides a resource to manage MAAS VM hosts. Creation waits up to 60 minutes for the host to register and sync.
 ---
 
 # maas_vm_host (Resource)
 
-Provides a resource to manage MAAS VM hosts.
+Provides a resource to manage MAAS VM hosts. Creation waits up to 60 minutes for the host to register and sync.
 
 ## Example Usage
 
