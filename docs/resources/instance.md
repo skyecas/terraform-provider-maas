@@ -5,6 +5,7 @@ subcategory: ""
 description: |-
   Provides a resource to deploy and release machines already configured in MAAS, based on the specified parameters. If no parameters are given, a random machine will be allocated and deployed using the defaults.
   NOTE: The MAAS provider currently provides both standalone resources and in-line resources for network interfaces. You cannot use in-line network interfaces in conjunction with any standalone network interfaces resources. Doing so will cause conflicts and will overwrite network configs.
+  Creation waits up to 60 minutes for the machine to be allocated, commissioned and deployed.
 ---
 
 # maas_instance (Resource)
@@ -12,6 +13,8 @@ description: |-
 Provides a resource to deploy and release machines already configured in MAAS, based on the specified parameters. If no parameters are given, a random machine will be allocated and deployed using the defaults.
 
 **NOTE:** The MAAS provider currently provides both standalone resources and in-line resources for network interfaces. You cannot use in-line network interfaces in conjunction with any standalone network interfaces resources. Doing so will cause conflicts and will overwrite network configs.
+
+Creation waits up to 60 minutes for the machine to be allocated, commissioned and deployed.
 
 ## Example Usage
 
